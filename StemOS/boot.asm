@@ -8,7 +8,8 @@ start:
     mov bx,0
     int 0x10
     ;bios is like in kernal itself
-    ;interrupt jump table 
+    ;interrupt jump table
+    ;jmp to the loop
     jmp $
 
 times 510-($ - $$) db 0
